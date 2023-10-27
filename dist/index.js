@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 const constants_helper_1 = require("./helpers/constants.helper");
 const apollo_server_1 = require("apollo-server");
@@ -99,6 +100,6 @@ const resolvers = {
     },
 };
 const server = new apollo_server_2.ApolloServer({ typeDefs, resolvers });
-server.listen().then(({ url }) => {
+server.listen({ port: (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 4000 }).then(({ url }) => {
     console.log(`Сервер GraphQL готов по адресу ${url}`);
 });
