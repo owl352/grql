@@ -22,7 +22,6 @@ let gymSlots = Array.from({ length: gymData.length }, (_, i) => {
   };
 });
 
-
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
@@ -107,6 +106,6 @@ app.use(
   })
 );
 
-app.listen(process.env.PORT??4000, () => {
-  console.log("Сервер GraphQL запущен на порту 4000");
+app.listen(process.env.PORT ?? 4000, () => {
+  console.log(`Сервер GraphQL запущен на порту ${process.env.PORT ?? 4000}`);
 });
