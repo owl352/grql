@@ -14,14 +14,14 @@ exports.gymData = [
         name: "Зал 1",
         adminName: "Администратор 1",
         adminPhone: "123-456-7890",
-        maxSlots: 10,
+        availableSlots: 10,
     },
     {
         id: 2,
         name: "Зал 2",
         adminName: "Администратор 2",
         adminPhone: "987-654-3210",
-        maxSlots: 15,
+        availableSlots: 15,
     },
 ];
 // Модель покупателей

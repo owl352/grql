@@ -3,5 +3,5 @@ export type GymData = {
     name: string,
     adminName: string,
     adminPhone: string,
-    maxSlots: number,
+    availableSlots: number,
 }
