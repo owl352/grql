@@ -99,7 +99,7 @@ const resolvers = {
         },
     },
 };
-const server = new apollo_server_2.ApolloServer({ typeDefs, resolvers });
+const server = new apollo_server_2.ApolloServer({ typeDefs, resolvers, introspection: true });
 server.listen({ port: (_a = process.env.PORT) !== null && _a !== void 0 ? _a : 4000 }).then(({ url }) => {
     console.log(`Сервер GraphQL готов по адресу ${url}`);
 });
